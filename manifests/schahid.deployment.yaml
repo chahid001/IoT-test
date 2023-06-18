@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: schahid-app
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: schahid
+  template:
+    metadata:
+      labels:
+        app: schahid
+    spec:
+      containers:
+        - name: schahid-app-hello
+          image: soufiane01/schahid:v1
+          ports:
+            - containerPort: 9090

@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: schahid-app-hello
-          image: soufiane01/schahid:v3
+          image: soufiane01/schahid:v4
           ports:
             - containerPort: 9090
